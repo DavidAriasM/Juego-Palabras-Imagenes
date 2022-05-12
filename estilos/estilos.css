@@ -1,0 +1,23 @@
+body {
+    background-color: #f8f8f7;
+}
+
+.row {
+    background-color: bisque;
+}
+
+span {
+    text-align: center;
+}
+
+.btn-dark {
+    background-color: #1c1b23;
+}
+
+.lista-palabras {
+    background-color: #96a6ac;
+}
+
+.ingreso-palabras {
+    background-color: #7997a8;
+}

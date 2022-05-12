@@ -1,0 +1,46 @@
+[{
+        "jugada": "Jugada 1",
+        "respuestas": {
+            "1": "bosque",
+            "2": "niebla",
+            "3": "pinos",
+            "4": "paisaje",
+            "5": "amanecer"
+        },
+        "imagen": "img-prueba.jpg"
+    },
+    {
+        "jugada": "Jugada 2",
+        "respuestas": {
+            "1": "bosque",
+            "2": "niebla",
+            "3": "pinos",
+            "4": "paisaje",
+            "5": "amanecer"
+        },
+        "imagen": "img-prueba.jpg"
+    },
+    {
+        "jugada": "Jugada 3",
+        "respuestas": {
+            "1": "bosque",
+            "2": "niebla",
+            "3": "pinos",
+            "4": "paisaje",
+            "5": "amanecer"
+        },
+        "imagen": "img-prueba.jpg"
+    },
+    {
+        "jugada": "Jugada 4",
+        "respuestas": {
+            "1": "bosque",
+            "2": "niebla",
+            "3": "pinos",
+            "4": "paisaje",
+            "5": "amanecer"
+        },
+        "imagen": "img-prueba.jpg"
+    }
+
+]
