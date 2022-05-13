@@ -21,3 +21,8 @@ span {
 .ingreso-palabras {
     background-color: #7997a8;
 }
+
+.btn-success {
+    display: none;
+    float: right;
+}

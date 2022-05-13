@@ -2,21 +2,36 @@ const imagen = document.querySelector('.img-fluid');
 const divRespuestas = document.querySelector('.div-respuestas');
 const inputRespuesta = document.querySelector('.input-respuesta');
 const btnProbar = document.querySelector('#btn-probar');
+const btnSiguiente = document.querySelector('.btn-success')
+let contadorRespuestas = 0;
+let verificadorRespuestas = []
 let respuestasJson = {}
+let contadorJugada = 0;
+let inputOpciones = '';
 
 function cargarJuego() {
     fetch('json/opciones.json')
         .then(response => response.json())
         .then(data => {
-            cargarPartidaDatos(data[0])
+            cargarPartidaDatos(data[contadorJugada])
         });
+}
+
+function siguienteJugada(contadorJugada) {
+    fetch('json/opciones.json')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Jugada nueva: ', data[contadorJugada])
+            console.log(inputOpciones)
+            cargarPartidaDatos(data[contadorJugada])
+        })
 }
 
 function cargarPartidaDatos(data) {
     imagen.setAttribute('src', `img/${data.imagen}`)
     respuestasJson = data.respuestas;
     for (i = 1; i <= Object.keys(data.respuestas).length; i++) {
-        let inputOpciones = document.createElement('input');
+        inputOpciones = document.createElement('input');
         inputOpciones.type = 'text';
         inputOpciones.className = 'col-8 my-2 input-correctas';
         inputOpciones.value = data.respuestas[i];
@@ -24,7 +39,6 @@ function cargarPartidaDatos(data) {
         inputOpciones.style.color = 'transparent'
         divRespuestas.appendChild(inputOpciones)
     }
-
 }
 
 btnProbar.addEventListener('click', () => {
@@ -49,13 +63,29 @@ function comprobarRespuesta() {
     inputRespuesta.focus()
 }
 
-
 function habilitarInputCorrecto(respuesta) {
-    const inputs = document.querySelectorAll('.input-correctas')
+    const inputs = document.querySelectorAll('.input-correctas');
     for (i = 0; i < inputs.length; i++) {
         if (respuesta === inputs[i].value) {
-            inputs[i].style.color = '#000'
+            if (!verificadorRespuestas.includes(respuesta)) {
+                verificadorRespuestas.push(respuesta);
+                inputs[i].style.color = '#000';
+            }
         }
     }
+    validarBtnSiguiente(verificadorRespuestas.length)
 }
-cargarJuego()
+
+validarBtnSiguiente = (respuestasCantidad) => {
+    if (respuestasCantidad === 5) {
+        btnSiguiente.style.display = 'block'
+    }
+}
+
+btnSiguiente.addEventListener('click', () => {
+    siguienteJugada(contadorJugada + 1)
+})
+
+window.addEventListener('load', () => {
+    cargarJuego();
+})
