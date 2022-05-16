@@ -26,3 +26,8 @@ span {
     display: none;
     float: right;
 }
+
+.input-correctas {
+    text-transform: uppercase;
+    font-weight: bold;
+}

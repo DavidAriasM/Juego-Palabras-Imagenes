@@ -1,46 +1,57 @@
 [{
         "jugada": "Jugada 1",
         "respuestas": {
-            "1": "bosque",
-            "2": "niebla",
-            "3": "pinos",
-            "4": "paisaje",
-            "5": "amanecer"
+            "1": "cruz",
+            "2": "nieve",
+            "3": "nubes",
+            "4": "blanco",
+            "5": "atardecer"
         },
-        "imagen": "img-prueba.jpg"
+        "imagen": "https://i.picsum.photos/id/1000/5626/3635.jpg?hmac=qWh065Fr_M8Oa3sNsdDL8ngWXv2Jb-EE49ZIn6c0P-g"
     },
     {
         "jugada": "Jugada 2",
         "respuestas": {
-            "1": "animal",
-            "2": "niebla",
-            "3": "pinos",
-            "4": "paisaje",
-            "5": "amanecer"
+            "1": "bufanda",
+            "2": "mar",
+            "3": "espalda",
+            "4": "lentes",
+            "5": "atardecer"
         },
-        "imagen": "img-prueba.jpg"
+        "imagen": "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY"
     },
     {
         "jugada": "Jugada 3",
         "respuestas": {
-            "1": "bosque",
-            "2": "niebla",
-            "3": "pinos",
-            "4": "paisaje",
-            "5": "amanecer"
+            "1": "macetero",
+            "2": "ventana",
+            "3": "sofa",
+            "4": "dormir",
+            "5": "libros"
         },
-        "imagen": "img-prueba.jpg"
+        "imagen": "https://i.picsum.photos/id/1008/5616/3744.jpg?hmac=906z84ml4jhqPMsm4ObF9aZhCRC-t2S_Sy0RLvYWZwY"
     },
     {
         "jugada": "Jugada 4",
         "respuestas": {
-            "1": "bosque",
-            "2": "niebla",
-            "3": "pinos",
-            "4": "paisaje",
-            "5": "amanecer"
+            "1": "lago",
+            "2": "pinos",
+            "3": "bote",
+            "4": "naranja",
+            "5": "agua"
         },
-        "imagen": "img-prueba.jpg"
+        "imagen": "https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk"
+    },
+    {
+        "jugada": "Jugada 5",
+        "respuestas": {
+            "1": "montaña",
+            "2": "camino",
+            "3": "verde",
+            "4": "niebla",
+            "5": "nubes"
+        },
+        "imagen": "https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg"
     }
 
 ]

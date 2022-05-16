@@ -8,6 +8,8 @@ let verificadorRespuestas = []
 let respuestasJson = {}
 let contadorJugada = 0;
 let inputOpciones = '';
+var div;
+let largoResultado = 0;
 
 function cargarJuego() {
     fetch('json/opciones.json')
@@ -18,27 +20,38 @@ function cargarJuego() {
 }
 
 function siguienteJugada(contadorJugada) {
-    fetch('json/opciones.json')
-        .then(response => response.json())
-        .then(data => {
-            console.log('Jugada nueva: ', data[contadorJugada])
-            console.log(inputOpciones)
-            cargarPartidaDatos(data[contadorJugada])
-        })
+    if (contadorJugada !== largoResultado) {
+        fetch('json/opciones.json')
+            .then(response => response.json())
+            .then(data => {
+                //console.log('Jugada nueva: ', data[contadorJugada])
+                divRespuestas.removeChild(div)
+                largoResultado = data.length;
+                cargarPartidaDatos(data[contadorJugada])
+            });
+    } else {
+        console.log('Terminado');
+    }
+
 }
 
 function cargarPartidaDatos(data) {
-    imagen.setAttribute('src', `img/${data.imagen}`)
+    imagen.setAttribute('src', `${data.imagen}`)
     respuestasJson = data.respuestas;
+    div = document.createElement('div');
+    divRespuestas.appendChild(div)
     for (i = 1; i <= Object.keys(data.respuestas).length; i++) {
         inputOpciones = document.createElement('input');
         inputOpciones.type = 'text';
-        inputOpciones.className = 'col-8 my-2 input-correctas';
+        inputOpciones.className = 'col-8 my-2 input-correctas text-center';
         inputOpciones.value = data.respuestas[i];
         inputOpciones.disabled = true;
         inputOpciones.style.color = 'transparent'
-        divRespuestas.appendChild(inputOpciones)
+        div.appendChild(inputOpciones)
     }
+    verificadorRespuestas = [];
+    btnSiguiente.style.display = 'none';
+
 }
 
 btnProbar.addEventListener('click', () => {
@@ -83,7 +96,7 @@ validarBtnSiguiente = (respuestasCantidad) => {
 }
 
 btnSiguiente.addEventListener('click', () => {
-    siguienteJugada(contadorJugada + 1)
+    siguienteJugada(contadorJugada = contadorJugada + 1)
 })
 
 window.addEventListener('load', () => {
