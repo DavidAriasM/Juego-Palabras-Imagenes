@@ -39,11 +39,12 @@ function cargarPartidaDatos(data) {
     imagen.setAttribute('src', `${data.imagen}`)
     respuestasJson = data.respuestas;
     div = document.createElement('div');
+    div.className = 'd-flex flex-column align-items-center'
     divRespuestas.appendChild(div)
     for (i = 1; i <= Object.keys(data.respuestas).length; i++) {
         inputOpciones = document.createElement('input');
         inputOpciones.type = 'text';
-        inputOpciones.className = 'col-8 my-2 input-correctas text-center';
+        inputOpciones.className = 'col-6 my-2 input-correctas text-center';
         inputOpciones.value = data.respuestas[i];
         inputOpciones.disabled = true;
         inputOpciones.style.color = 'transparent'
@@ -51,12 +52,17 @@ function cargarPartidaDatos(data) {
     }
     verificadorRespuestas = [];
     btnSiguiente.style.display = 'none';
-
 }
 
 btnProbar.addEventListener('click', () => {
-    comprobarRespuesta()
+    comprobarRespuesta();
 })
+
+inputRespuesta.addEventListener('keypress', function(e) {
+    if (e.keyCode === 13) {
+        comprobarRespuesta();
+    }
+});
 
 function comprobarRespuesta() {
 

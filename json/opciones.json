@@ -52,6 +52,72 @@
             "5": "nubes"
         },
         "imagen": "https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg"
+    },
+    {
+        "jugada": "Jugada 6",
+        "respuestas": {
+            "1": "beso",
+            "2": "pareja",
+            "3": "lluvia",
+            "4": "noche",
+            "5": "contraluz"
+        },
+        "imagen": "https://i.picsum.photos/id/1004/5616/3744.jpg?hmac=Or7EJnz-ky5bsKa9_frdDcDCR9VhCP8kMnbZV6-WOrY"
+    },
+    {
+        "jugada": "Jugada 7",
+        "respuestas": {
+            "1": "perro",
+            "2": "pasto",
+            "3": "frio",
+            "4": "enojado",
+            "5": "abrigo"
+        },
+        "imagen": "https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y"
+    },
+    {
+        "jugada": "Jugada 8",
+        "respuestas": {
+            "1": "cascada",
+            "2": "arcoiris",
+            "3": "agua",
+            "4": "montaña",
+            "5": "orilla"
+        },
+        "imagen": "https://i.picsum.photos/id/1035/5854/3903.jpg?hmac=DV0AS2MyjW6ddofvSIU9TVjj1kewfh7J3WEOvflY8TM"
+    },
+    {
+        "jugada": "Jugada 9",
+        "respuestas": {
+            "1": "apple",
+            "2": "calendario",
+            "3": "fecha",
+            "4": "macbook",
+            "5": "mouse"
+        },
+        "imagen": "https://i.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU"
+    },
+    {
+        "jugada": "Jugada 10",
+        "respuestas": {
+            "1": "banca",
+            "2": "mascota",
+            "3": "vintage",
+            "4": "puente",
+            "5": "lago"
+        },
+        "imagen": "https://i.picsum.photos/id/129/4910/3252.jpg?hmac=g1KzJMIp75lG_scR48R1baC6TjhVmkEyygSyngKYRsg"
+    },
+    {
+        "jugada": "Jugada 11",
+        "respuestas": {
+            "1": "humedal",
+            "2": "lago",
+            "3": "montañas",
+            "4": "arboles",
+            "5": "velero"
+        },
+        "imagen": "https://i.picsum.photos/id/128/3823/2549.jpg?hmac=VbPyA2vESva2YdoXqll9REBcbQIskgv_c-D60C1s0xc"
     }
 
 ]
